@@ -58,9 +58,9 @@ function PatientList({ patients, onSelect, onUpdate, onDelete }) {
                   onChange={(e) => assignDoctor(p.id, e.target.value)}
                 >
                   <option value="">Assign Doctor</option>
-                  <option>Dr. Smith</option>
-                  <option>Dr. Lee</option>
-                  <option>Dr. Patel</option>
+                  <option>Dr. Jyothi</option>
+                  <option>Dr. Sowjanya</option>
+                  <option>Dr. Vinayak</option>
                 </select>
               </td>
               <td>
