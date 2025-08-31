@@ -8,7 +8,7 @@ function App() {
   const [patients, setPatients] = useState([]);
   const [selectedPatient, setSelectedPatient] = useState(null);
 
-  // Load data from localStorage on first render
+
   useEffect(() => {
     const savedPatients = JSON.parse(localStorage.getItem("patients")) || [];
     setPatients(savedPatients);
@@ -30,7 +30,7 @@ function App() {
     setSelectedPatient(null);
   };
 
-  // ✅ Manual save button function
+
   const saveToLocalStorage = () => {
     localStorage.setItem("patients", JSON.stringify(patients));
     alert("✅ Data saved successfully!");
